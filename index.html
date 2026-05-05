@@ -128,25 +128,48 @@
             border-radius: 8px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
         }
+        .mobile-report-button {
+            display: none;
+            text-align: center;
+            margin-top: 30px;
+        }
 
+        .mobile-report-button a {
+            display: inline-block;
+            background-color: #FD151B;
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+
+        .mobile-report-button a:hover {
+            background-color: #E6000D;
+            text-decoration: none;
+        }
         @media (max-width: 768px) {
             .header {
                 flex-direction: column;
                 text-align: center;
             }
-
             .logo {
                 margin-bottom: 15px;
             }
-
             .header-text h1 {
                 font-size: 2em;
             }
-
             .container {
                 padding: 25px;
             }
+            .report-section {
+                display: none;
+            }
+            .mobile-report-button {
+                display: block;
+            }
         }
+
     </style>
 </head>
 <body>
@@ -189,10 +212,14 @@
         💪 Macht mit und helft, Waldenburg für alle sicherer zu machen.
     </p>
 
-    <div class="section">
+
+    <div class="section report-section">
         <h2>Problem melden</h2>
-        <iframe height="900" src="https://waldenburg-sicher-unterwegs.ushahidi.io/posts/create/1" frameborder="0"
-                allowfullscreen></iframe>
+        <iframe height="900" src="https://waldenburg-sicher-unterwegs.ushahidi.io/posts/create/1" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="mobile-report-button">
+        <a href="https://waldenburg-sicher-unterwegs.ushahidi.io/posts/create/1" target="_blank">Problem melden →</a>
     </div>
 
 </div>
