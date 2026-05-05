@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waldenburg Initiative</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, 'Segoe UI', sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 960px;
+            width: 100%;
+            margin: 0;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            box-sizing: border-box;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .logo {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .header-text h1 {
+            color: #01295F;
+            margin: 0;
+            border: none;
+            padding: 0;
+            font-size: 2.2em;
+            font-weight: 600;
+            background: linear-gradient(to bottom, #C21014, #FD151B);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h2 {
+            color: #01295F;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border: none;
+            padding-bottom: 0;
+            font-size: 1.8em;
+            font-weight: 600;
+        }
+
+        h3 {
+            color: #315188;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+            font-weight: 500;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        a {
+            color: #FD151B;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease-in-out;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #E6000D;
+        }
+
+        .project-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .project-list li {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .project-list li::before {
+            content: '•';
+            color: #FD151B;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 1.2em;
+        }
+
+        .project-link {
+            font-weight: bold;
+            color: #01295F;
+        }
+
+        .project-link:hover {
+            color: #FD151B;
+        }
+
+        iframe {
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .logo {
+                margin-bottom: 15px;
+            }
+
+            .header-text h1 {
+                font-size: 2em;
+            }
+
+            .container {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <img src="https://avatars.githubusercontent.com/u/281854692?s=400&u=5d70cf73a6a87af681d729ca6e8c39802abed9fd&v=4"
+             alt="Waldenburg Initiative Logo" class="logo">
+        <div class="header-text">
+            <h1>Waldenburg Initiative</h1>
+        </div>
+    </div>
+
+    <h2>🚗 Waldenburg: Sicher unterwegs</h2>
+
+    <p>
+        Sicher unterwegs gibt den Menschen in Waldenburg die Möglichkeit, Probleme im Straßenverkehr zu melden.
+        Egal ob es um Kinder auf dem Schulweg 🚸, Seniorinnen und Senioren 👵👴, Radfahrerinnen und Radfahrer 🚴 oder andere
+        Verkehrsteilnehmende geht – eure Meldungen helfen uns, Gefahrenstellen zu erkennen und uns für sichere
+        Straßen einzusetzen.
+    </p>
+
+    <h3>🏙️ Ein sicheres Waldenburg für alle</h3>
+
+    <p>
+        Wir möchten eine Stadt, in der sich alle Menschen sicher bewegen können. Jede Meldung hilft uns zu verstehen,
+        wie sicher sich die Bürgerinnen und Bürger in den Straßen von Waldenburg fühlen und wo Handlungsbedarf besteht.
+    </p>
+
+    <h3>❓ Warum wir das tun</h3>
+
+    <p>
+        Fahrende können abgelenkt sein, und wir können uns nicht darauf verlassen, dass alle immer perfekt aufmerksam
+        sind.
+        Deshalb brauchen wir Maßnahmen, die sowohl Autofahrenden helfen, vorsichtiger zu sein, als auch Fußgängerinnen
+        und
+        Fußgängern, Radfahrenden und anderen Verkehrsteilnehmenden ein besseres Gefühl von Sicherheit geben.
+    </p>
+
+    <p>
+        💪 Macht mit und helft, Waldenburg für alle sicherer zu machen.
+    </p>
+
+    <div class="section">
+        <h2>Problem melden</h2>
+        <iframe height="900" src="https://waldenburg-sicher-unterwegs.ushahidi.io/posts/create/1" frameborder="0"
+                allowfullscreen></iframe>
+    </div>
+
+</div>
+</body>
+</html>
